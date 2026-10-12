@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="CAFE GREENは、緑とやさしい光に包まれる街角のカフェ。季節のランチと丁寧に淹れたコーヒーで、ひと息つく時間を。Web制作練習用の架空の店舗です。">
+  <meta name="theme-color" content="#214b3d">
+  <title>CAFE GREEN | 緑と、ひと息。</title>
+  <link rel="icon" type="image/svg+xml" href="assets/leaf.svg">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">本文へスキップ</a>
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="brand" href="#home" aria-label="CAFE GREEN ホーム">
+        <svg class="brand-mark" viewBox="0 0 40 40" aria-hidden="true"><path d="M31 7C15 5 6 14 10 25c3 9 17 9 20-3 1-5 1-10 1-15Z"/><path d="M9 34 25 14M16 25l-1-9M21 21l8-1"/></svg>
+        <span>CAFE GREEN<small>COFFEE &amp; A LITTLE GREEN</small></span>
+      </a>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="メニューを開く" hidden>
+        <span></span><span></span>
+      </button>
+      <nav class="site-nav" id="site-nav" aria-label="メインナビゲーション">
+        <a href="#about">私たちについて</a>
+        <a href="#menu">メニュー</a>
+        <a href="#access">店舗情報</a>
+        <a class="nav-contact" href="#contact">お問い合わせ <span aria-hidden="true">↗</span></a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero" id="home" aria-labelledby="hero-heading">
+      <div class="hero-copy">
+        <p class="eyebrow"><span></span> YOUR EVERYDAY RETREAT</p>
+        <h1 id="hero-heading">緑と、<br>ひと息。</h1>
+        <p class="hero-description">忙しい毎日に、ちいさな余白を。<br>一杯のコーヒーと、季節のおいしさが<br>あなたをお待ちしています。</p>
+        <a class="button button-green" href="#menu">メニューを見る <span aria-hidden="true">↗</span></a>
+        <div class="hero-hours"><span class="hours-label">OPEN</span><p>10:00 — 18:00<small>水曜定休</small></p></div>
+      </div>
+      <div class="hero-visual">
+        <img src="assets/cafe.jpg" width="1400" height="1500" alt="木の家具と観葉植物がある、やわらかな光のカフェ店内のイメージ" fetchpriority="high">
+        <span class="photo-tag">a little pause, a little green.</span>
+        <div class="hero-stamp" aria-hidden="true"><svg viewBox="0 0 40 40"><path d="M30 8C15 7 8 15 11 25c3 8 15 7 18-3 1-5 1-9 1-14Z"/><path d="m9 34 16-20"/></svg><span>TAKE A<br>LITTLE BREAK</span></div>
+      </div>
+      <a class="scroll-cue" href="#about"><span>SCROLL TO EXPLORE</span><span aria-hidden="true">↓</span></a>
+    </section>
+
+    <section class="about section-pad" id="about" aria-labelledby="about-heading">
+      <div class="container about-layout">
+        <div class="section-label"><span class="section-number">01 / ABOUT US</span><h2 class="section-title" id="about-heading">日常に、<br>やさしい時間を。</h2><div class="leaf-lines" aria-hidden="true"><svg viewBox="0 0 160 150"><path d="M49 139C49 100 75 52 117 21M70 99C24 98 20 64 20 64c30-1 45 10 50 35ZM87 73c-6-34 15-55 15-55 14 29 4 47-15 55Zm-9 17c35 6 54-16 54-16-29-9-47-3-54 16Zm27-46c26 0 39-18 39-18-23-4-34 4-39 18Z"/></svg></div></div>
+        <div class="about-body">
+          <p class="lead">いつもの街で、<br>お気に入りの居場所を。</p>
+          <p>CAFE GREENは、緑とやわらかな光に包まれる街角のカフェ。<br class="desktop-break">香り豊かなコーヒー、季節の食材を使ったごはん、<br class="desktop-break">手づくりのスイーツをご用意しています。</p>
+          <p>本を開いたり、友人と話したり、ただ窓の外を眺めたり。<br class="desktop-break">思い思いの時間を、どうぞゆっくりお過ごしください。</p>
+          <div class="about-note"><span aria-hidden="true">✳</span><span>一杯ずつ丁寧に。ひと皿ずつ、心を込めて。</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="menu-section section-pad" id="menu" aria-labelledby="menu-heading">
+      <div class="container">
+        <div class="section-top"><div><span class="section-number">02 / OUR MENU</span><h2 class="section-title" id="menu-heading">今日の、ひとくち。</h2></div><p>ひと息のおともに、お気に入りを。<br>CAFE GREENのおすすめメニュー。</p></div>
+        <div class="menu-grid">
+          <article class="menu-card">
+            <div class="menu-image"><img src="assets/coffee.jpg" width="800" height="650" alt="カップに入った香り豊かなコーヒーのイメージ" loading="lazy"><span class="menu-category">COFFEE</span></div>
+            <div class="menu-detail"><div class="menu-title-row"><h3>グリーンブレンド</h3><span class="price">¥550</span></div><p>やわらかな酸味と、ナッツのような香ばしさ。毎日飲みたくなる、私たちの定番です。</p><span class="menu-option">HOT / ICED</span></div>
+          </article>
+          <article class="menu-card">
+            <div class="menu-image"><img src="assets/sandwich.jpg" width="800" height="650" alt="新鮮な野菜をはさんだサンドイッチのイメージ" loading="lazy"><span class="menu-category">LUNCH</span></div>
+            <div class="menu-detail"><div class="menu-title-row"><h3>季節野菜のサンド</h3><span class="price">¥980</span></div><p>旬の野菜を、香ばしいパンでたっぷりと。素材のおいしさを楽しむ、軽やかなランチ。</p><span class="menu-option">ミニサラダ付き</span></div>
+          </article>
+          <article class="menu-card">
+            <div class="menu-image"><img src="assets/cake.jpg" width="800" height="650" alt="ベリーを添えた手づくりスイーツのイメージ" loading="lazy"><span class="menu-category">SWEETS</span></div>
+            <div class="menu-detail"><div class="menu-title-row"><h3>季節のベリーチーズケーキ</h3><span class="price">¥650</span></div><p>なめらかなチーズに、ベリーの甘酸っぱさを。コーヒーと一緒に、午後のごほうびを。</p><span class="menu-option">数量限定</span></div>
+          </article>
+        </div>
+        <p class="menu-footnote">表示価格は税込です。写真はイメージです。メニュー・価格は練習用の設定です。</p>
+      </div>
+    </section>
+
+    <section class="access section-pad" id="access" aria-labelledby="access-heading">
+      <div class="container access-layout">
+        <div class="access-info"><span class="section-number">03 / VISIT US</span><h2 class="section-title" id="access-heading">ふらっと、<br>寄り道しませんか。</h2><p class="access-intro">街の喧騒から、少しだけ離れて。<br>いつもの席で、お待ちしています。</p>
+          <dl class="store-details">
+            <div><dt>営業時間</dt><dd><strong>10:00 — 18:00</strong><span>ラストオーダー 17:30</span></dd></div>
+            <div><dt>定休日</dt><dd>毎週水曜日</dd></div>
+            <div><dt>住所</dt><dd>〒000-0000<br>みどり市若葉町1-2-3<span>グリーンテラス 1F（架空の住所）</span></dd></div>
+            <div><dt>アクセス</dt><dd>みどり線「若葉駅」南口より徒歩5分<span>駅を出て並木通りを直進。公園の向かいです。</span></dd></div>
+          </dl>
+        </div>
+        <div class="map-block">
+          <div class="map-illustration" role="img" aria-label="架空の案内図。若葉駅南口から並木通りを進むと、公園の向かいにCAFE GREENがあります。">
+            <svg viewBox="0 0 600 480" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <rect width="600" height="480" fill="#edf0e8"/>
+              <g fill="#dfe5da"><rect x="32" y="30" width="155" height="108" rx="5"/><rect x="32" y="180" width="155" height="120" rx="5"/><rect x="235" y="30" width="135" height="108" rx="5"/><rect x="413" y="180" width="158" height="116" rx="5"/><rect x="235" y="340" width="136" height="108" rx="5"/><rect x="413" y="340" width="158" height="108" rx="5"/></g>
+              <path d="M210 0v480M0 159h600M0 319h600M391 0v480" stroke="#fffdf8" stroke-width="28"/>
+              <path d="M0 415h170" stroke="#bfc8bd" stroke-width="13"/><path d="M0 415h170" stroke="#edf0e8" stroke-width="7" stroke-dasharray="5 7"/>
+              <rect x="40" y="350" width="125" height="49" rx="6" fill="#fffdf8" stroke="#9aa99a"/>
+              <text x="102" y="380" text-anchor="middle" fill="#43594a" font-size="18" font-family="sans-serif">若葉駅</text>
+              <text x="176" y="384" fill="#566852" font-size="12" font-family="sans-serif">南口</text>
+              <rect x="412" y="28" width="159" height="110" rx="12" fill="#c6d7b8"/>
+              <g fill="#a7c397"><circle cx="442" cy="65" r="16"/><circle cx="535" cy="57" r="14"/><circle cx="530" cy="104" r="16"/></g>
+              <text x="485" y="92" text-anchor="middle" fill="#435b39" font-size="16" font-family="sans-serif">若葉公園</text>
+              <path d="M174 374h35v-55h181V245h52" fill="none" stroke="#607d5f" stroke-width="4" stroke-linecap="round" stroke-dasharray="3 9"/>
+              <circle cx="440" cy="245" r="7" fill="#214b3d"/>
+              <rect x="430" y="199" width="125" height="35" rx="3" fill="#214b3d"/>
+              <text x="492" y="221" text-anchor="middle" fill="white" font-size="14" font-family="sans-serif">CAFE GREEN</text>
+              <text x="300" y="300" text-anchor="middle" fill="#61725b" font-size="13" font-family="sans-serif">並 木 通 り</text>
+              <g transform="translate(544 376)" fill="none" stroke="#61725b" stroke-width="1.5"><path d="M0 37V0l-7 12M0 0l7 12"/></g><text x="544" y="367" text-anchor="middle" fill="#61725b" font-size="13" font-family="sans-serif">N</text>
+            </svg>
+          </div>
+          <div class="map-caption"><span>WAKABA / MIDORI CITY</span><span>駅から徒歩5分 <span aria-hidden="true">↗</span></span></div>
+          <p class="demo-caption">こちらは制作練習用の架空の案内図です。</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact section-pad" id="contact" aria-labelledby="contact-heading">
+      <div class="container contact-layout">
+        <div><span class="section-number">04 / GET IN TOUCH</span><h2 class="section-title" id="contact-heading">気になること、<br>お聞かせください。</h2><p>メニューのこと、ご来店のこと。<br>どうぞお気軽にお問い合わせください。</p><span class="contact-note">このサイトはWeb制作練習用です。<br>フォームの内容は送信・保存されません。</span></div>
+        <div class="contact-action"><a class="button button-light contact-open" href="#contact-form">お問い合わせ <span aria-hidden="true">↗</span></a><span>入力フォームへ進む</span></div>
+      </div>
+      <div class="container contact-panel" id="contact-form">
+        <form class="inquiry-form">
+          <p class="form-intro">お問い合わせフォーム（デモ）<small>入力すると確認メッセージを表示します。実際の送信は行いません。</small></p>
+          <div class="form-grid"><div class="form-field"><label for="name">お名前 <span>必須</span></label><input id="name" name="name" disabled autocomplete="name" required maxlength="80" placeholder="山田 花子"></div><div class="form-field"><label for="email">メールアドレス <span>必須</span></label><input id="email" name="email" disabled type="email" autocomplete="email" required maxlength="254" placeholder="example@example.com"></div></div>
+          <div class="form-field"><label for="message">お問い合わせ内容 <span>必須</span></label><textarea id="message" name="message" disabled rows="4" required minlength="5" maxlength="2000" placeholder="お問い合わせ内容を5文字以上で入力してください"></textarea></div>
+          <div class="form-footer"><button class="button button-green" type="submit" disabled>入力内容を確認する <span aria-hidden="true">↗</span></button><p class="form-status" role="status" aria-live="polite"></p></div>
+          <noscript><p class="noscript-message">このデモフォームを操作するにはJavaScriptを有効にしてください。内容は送信されません。</p></noscript>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer"><div class="container footer-top"><a class="footer-brand" href="#home">CAFE GREEN<span>緑と、ひと息。</span></a><a class="back-to-top" href="#home">ページの先頭へ <span aria-hidden="true">↑</span></a></div><div class="container footer-bottom"><small>© <span id="year">2026</span> CAFE GREEN</small><p>架空のカフェを題材にしたWeb制作練習用サイトです。</p></div></footer>
+</body>
+</html>
